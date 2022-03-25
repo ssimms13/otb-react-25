@@ -12,7 +12,7 @@ const Grid = styled.div`
   font-family: 'ThunderBlack';
   font-size: 4em;
   line-height: 0.74em;
-  color: #f7f4af;
+  color: #ffffff;
 
   @media (max-width: 425px) {
     grid-template-columns: 1fr;
@@ -39,21 +39,23 @@ const Right = styled.div`
   display: flex;
   width: 100%;
   height: 100%;
-  background: #f7f4af;
+  background: #2299ff;
   color: #252525;
 `
 
 const Sub = styled.div`
   align-self: end;
-  width: 200px;
-  height: 2px;
-  background: #f7f4af;
+  width: 150px;
+  height: 150px;
+  background: #2299ff;
 `
 
 const Jumbo = styled.div`
   align-self: center;
+  text-align: right;
   padding: 100px;
-  font-size: 3.5em;
+  font-size: 1em;
+  line-height: 1em;
   color: #252525;
 `
 
@@ -81,20 +83,31 @@ export default function Underlay() {
     <Grid>
       <Left>
         <div>
-          THE SISTRUM
+          TIME TO
           <br />
-          IS DESIGNED
+          THINK
           <br />
-          TO REPRESENT
+          OUTSIDE
           <br />
-          CONTINUAL
+          THE
           <br />
-          AGITATION.
+          BOX.
         </div>
         <Sub />
       </Left>
       <Right>
-        <Jumbo>M1</Jumbo>
+        <Jumbo>
+          <div>
+            DISCOVER
+            <br />
+            STORE
+            <br />
+            SOLUTIONS
+            <br />
+            REACH
+            <br />
+          </div>
+        </Jumbo>
       </Right>
     </Grid>
   )
